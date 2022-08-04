@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>specificity=명시도</h1>
+<p>id선택자;100점</p>
+<p>class 선택자:10점</p>
+<p>element 선택자:1점</p>
+<p>점수가 같으면 아래쪽에 있는 속성 적용됨</p>
+<style>
+    h1{
+        background-color: yellow;
+    }
+    .note{
+        background-color: red;
+        text-align: right;
+    }
+.error{
+    text-align: center;
+    }
+    
+    .note.error{
+        background-color: blue;
+    }
+#head1{
+    background-color: beige;
+}
+
+</style>
+
+<hr>
+
+<!-- h1.note.error*5>lorem2 -->
+<h1 id=head1 class="note error">Lorem, ipsum.</h1>
+<h1 class="note error">Ipsa, aspernatur.</h1>
+<h1 class="note error">Rem, veniam.</h1>
+<h1 class="note error">Vitae, deserunt.</h1>
+<h1 class="note error">Eveniet, eligendi?</h1>
+</body>
+</html>

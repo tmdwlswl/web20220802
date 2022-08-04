@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제 셀렉터 */
+        h1+p{
+        color:blue;
+        }
+
+        .error+p{
+            border: 5px solid;
+        } 
+        .note+p{
+            text-decoration: line-through;
+        }
+</style>
+</head>
+<body>
+<!-- h1.error+p>lorem^h1.note+p>lorem -->
+<!-- +는 어떤엘리맨트 바로 다음에 오게하는 것 -->
+<h1 class="error"></h1>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor perspiciatis obcaecati temporibus impedit veniam officiis sed inventore voluptatibus, dicta totam deserunt optio accusantium aut esse voluptatum magnam amet? Reiciendis, optio.
+</p>
+<h1 class="note"></h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod quidem delectus exercitationem cumque impedit cum suscipit laboriosam odio officia incidunt, quas, soluta provident a, doloribus dolor? Fuga, commodi nam?
+</p>
+</body>
+</html>
