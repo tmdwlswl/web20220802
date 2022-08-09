@@ -91,9 +91,8 @@
 
     <hr>
 
-
     <style>
-        .div_test {
+        .main {
 
             background-color: gainsboro;
             text-align: center;
@@ -107,23 +106,28 @@
             margin: auto;
         }
 
-        .div_test>a {
+        .main>a {
             font-size: 48;
             font-weight: bold;
             padding: 25px;
         }
 
-        .div_test>a:hover {
+        .main>a:hover {
             background-color: white;
         }
 
-       .t>a {
-        background-color: green;
-       }
+        a:nth-child(odd) {
+            background-color: green;
+        }
+
+        a:nth-child(even) {
+            background-color: aqua;
+        }
     </style>
+    </head>
 
+    <body>
 
-    <div class="div_test">
         <div class="main">
             <h1>
                 HTML
@@ -131,24 +135,24 @@
             <p>
                 The language for building web pages
             </p>
-            <a  href="https://www.w3schools.com/html/default.asp">
+            <a href="https://www.w3schools.com/html/default.asp">
                 Learn HTML.
             </a>
-            <a  href="https://www.w3schools.com/videos/index.php">
+            <a href="https://www.w3schools.com/videos/index.php">
                 Video Tutorial.
             </a>
-            <a  href="https://www.w3schools.com/tags/default.asp">
+            <a href="https://www.w3schools.com/tags/default.asp">
                 HTML Reference.
             </a>
-            <a  href="https://campus.w3schools.com/collections/certifications/products/html-certificate">
+            <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate">
                 Buy Certification.
             </a>
 
 
 
         </div>
-    </div>
+        </div>
 
-</body>
+    </body>
 
 </html>
